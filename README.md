@@ -26,6 +26,7 @@ in your Logstash configuration file, add the Azure Sentinel output plugin to the
 - key_names – list of Log analytics output schema fields. 
 - plugin_flash_interval – Optional filed, define the maximal time difference (in seconds) between sending two messages to Log Analytics. 
 - Max_items – Optional field, 2000 by default. this parameter will control the maximum batch size. This value will be changed if the user didn’t specify “amount_resizing = false” in the configuration. 
+- azure_resource_id - Optional field, empty by default. This parameter allows you to send an Azure Resource ID in the header of the POST message to the Log Analytics. Azure Resource ID is useful for custom table RBAC. 
 
 Note: View the GitHub to learn more about the sent message’s configuration, performance settings and mechanism 
 
